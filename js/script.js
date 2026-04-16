@@ -107,17 +107,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.addToCart = function (id) {
-        if (localStorage.getItem("username")) {
-            let item = products.find(p => p.id === id)
-            if (!addedItems.some(p => p.id === id)) {
-                addedItems.push(item)
-                localStorage.setItem("ProductsInCart", JSON.stringify(addedItems))
-                updateCartDisplay()
-            }
-        } else {
-            window.location = "signin.html"
-        }
+    let item = products.find(p => p.id === id)
+
+    // 🚫 prevent adding if out of stock
+    if (!item || !item.ava) return;
+
+    // ✅ no login required anymore
+    if (!addedItems.some(p => p.id === id)) {
+        addedItems.push(item)
+        localStorage.setItem("ProductsInCart", JSON.stringify(addedItems))
+        updateCartDisplay()
     }
+}
 
     window.removeFromCart = function (id) {
         addedItems = addedItems.filter(p => p.id !== id)
