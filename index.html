@@ -36,25 +36,50 @@
     </header>
 
 
-    <section class="home">
-        <div class="container">
-            <div class="products row">
-                <div class="product_item col-xl-3">
-                    <img src="images/gamingChair.png" alt="gamingChair">
-                    <div class="product_item_desc">
-                    <p>Product: Gaming Chair </p>
-                    <p price="280">Price: 280&dollar; </p>
-                    <p>Category: Furniture </p>
-                    </div>
-                    <div class="product_item_action">
-                        <button class="add_to_cart btn" style="display:block">Add To Cart</button>
-                        <button class=" remove_from_car">Remove From Cart</button>
-                    </div>              
-                    <i class="fa-solid fa-heart fav" style="color: white;"></i> 
+<section class="home">
+    <div class="container">
+        <div class="products row">
+
+            <div class="product_item col-xl-3" data-id="1">
+
+                <img src="images/gamingChair.png" alt="gamingChair">
+
+                <div class="product_item_desc">
+
+                    <!-- PRODUCT NAME -->
+                    <p class="product_name" data-name="Gaming Chair">
+                        Product: Gaming Chair
+                    </p>
+
+                    <!-- PRICE -->
+                    <p class="product_price" data-price="280">
+                        Price: 280$
+                    </p>
+
+                    <!-- AVAILABILITY -->
+                    <p class="product_status in-stock" data-status="In Stock">
+                        In Stock
+                    </p>
+
+                    <!-- CATEGORY -->
+                    <p class="product_category">
+                        Category: Furniture
+                    </p>
+
                 </div>
+
+                <div class="product_item_action">
+                    <button class="add_to_cart btn">Add To Cart</button>
+                    <button class="remove_from_cart">Remove From Cart</button>
+                </div>
+
+                <i class="fa-solid fa-heart fav" style="color: white;"></i>
+
             </div>
+
         </div>
-    </section>    
+    </div>
+</section> 
 
 
     
