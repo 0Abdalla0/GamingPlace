@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ================= PRODUCTS DATA =================
     let products = [
         { id: 1, imgurl: "images/gamingChair.png", productName: "Gaming Chair", price: "280$", category: "Furniture", quantity: 0, ava: false },
-        { id: 2, imgurl: "images/EaFc24 (1).png", productName: "EA FC 24", price: "100$", category: "Games", quantity: 0, ava: false },
+        { id: 2, imgurl: "images/EaFc24 (1).png", productName: "EA FC 24", price: "100$", category: "Games", quantity: 0, ava: true},
         { id: 3, imgurl: "images/godOfWar.png", productName: "God Of War", price: "170$", category: "Games", quantity: 0, ava: false },
         { id: 4, imgurl: "images/Ps5.png", productName: "PS5", price: "800$", category: "Console", quantity: 0, ava: false },
         { id: 5, imgurl: "images/SpiderMan.png", productName: "Spider-Man", price: "300$", category: "Games", quantity: 0, ava: true },
