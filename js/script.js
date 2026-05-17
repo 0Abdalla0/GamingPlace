@@ -1,4 +1,4 @@
-redocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     // ================= USER INFO =================
     let userInfo = document.querySelector("#user-info")
